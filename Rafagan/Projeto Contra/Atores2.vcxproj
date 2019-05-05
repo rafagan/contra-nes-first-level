@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Abstract\Character.h" />
+    <ClInclude Include="Enemies\Cannon180.h" />
+    <ClInclude Include="Enemies\Cannon360.h" />
+    <ClInclude Include="definitions.h" />
+    <ClInclude Include="Enemies\EnemiesManager.h" />
+    <ClInclude Include="Enemies\statesRunner.h" />
+    <ClInclude Include="GameLoop.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Helper\Camera2D.h" />
+    <ClInclude Include="Helper\Database.h" />
+    <ClInclude Include="Helper\Loader.h" />
+    <ClInclude Include="Helper\MessageDispatcher.h" />
+    <ClInclude Include="Helper\Renderer.h" />
+    <ClInclude Include="Helper\Sound.h" />
+    <ClInclude Include="Helper\StateMachine.h" />
+    <ClInclude Include="Interfaces\Enemy.h" />
+    <ClInclude Include="Interfaces\GameObject.h" />
+    <ClInclude Include="Interfaces\Hero.h" />
+    <ClInclude Include="Interfaces\Level.h" />
+    <ClInclude Include="Interfaces\Map.h" />
+    <ClInclude Include="Interfaces\MapUtil.h" />
+    <ClInclude Include="Helper\Message.h" />
+    <ClInclude Include="Interfaces\Screen.h" />
+    <ClInclude Include="Interfaces\State.h" />
+    <ClInclude Include="Levels\LevelOne.h" />
+    <ClInclude Include="MainPlayer\PlayerEventPool.h" />
+    <ClInclude Include="MainPlayer\PlayerOne.h" />
+    <ClInclude Include="MainPlayer\statesMainPlayer.h" />
+    <ClInclude Include="MainPlayer\statesPlayerOne.h" />
+    <ClInclude Include="MainPlayer\statesPlayerTwo.h" />
+    <ClInclude Include="Maps\MapLevelOne.h" />
+    <ClInclude Include="Math\AABB.h" />
+    <ClInclude Include="Math\AffineTransform.h" />
+    <ClInclude Include="Math\MathUtil.h" />
+    <ClInclude Include="Math\Matrix3.h" />
+    <ClInclude Include="Math\Vector2D.h" />
+    <ClInclude Include="MainPlayer\PlayerTwo.h" />
+    <ClInclude Include="Abstract\Player.h" />
+    <ClInclude Include="Enemies\Runner.h" />
+    <ClInclude Include="Screens\Credits.h" />
+    <ClInclude Include="Screens\HowToPlay.h" />
+    <ClInclude Include="Screens\Menu.h" />
+    <ClInclude Include="Screens\Options.h" />
+    <ClInclude Include="Helper\TimeManager.h" />
+    <ClInclude Include="Enemies\SniperGuard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Abstract\Character.cpp" />
+    <ClCompile Include="Enemies\Cannon180.cpp" />
+    <ClCompile Include="Enemies\Cannon360.cpp" />
+    <ClCompile Include="Chien Source Code\ator.cpp" />
+    <ClCompile Include="Chien Source Code\chien2d2mapa.cpp" />
+    <ClCompile Include="Enemies\EnemiesManager.cpp" />
+    <ClCompile Include="Enemies\statesRunner.cpp" />
+    <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Helper\Camera2D.cpp" />
+    <ClCompile Include="Helper\Renderer.cpp" />
+    <ClCompile Include="Levels\LevelOne.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainPlayer\PlayerEventPool.cpp" />
+    <ClCompile Include="MainPlayer\PlayerOne.cpp" />
+    <ClCompile Include="MainPlayer\statesMainPlayer.cpp" />
+    <ClCompile Include="MainPlayer\statesPlayerOne.cpp" />
+    <ClCompile Include="MainPlayer\statesPlayerTwo.cpp" />
+    <ClCompile Include="Maps\MapLevelOne.cpp" />
+    <ClCompile Include="Math\AABB.cpp" />
+    <ClCompile Include="Math\AffineTransform.cpp" />
+    <ClCompile Include="Math\MathUtil.cpp" />
+    <ClCompile Include="Math\Matrix3.cpp" />
+    <ClCompile Include="Math\Vector2D.cpp" />
+    <ClCompile Include="MainPlayer\PlayerTwo.cpp" />
+    <ClCompile Include="Abstract\Player.cpp" />
+    <ClCompile Include="Enemies\Runner.cpp" />
+    <ClCompile Include="Screens\Credits.cpp" />
+    <ClCompile Include="Screens\HowToPlay.cpp" />
+    <ClCompile Include="Screens\Menu.cpp" />
+    <ClCompile Include="Screens\Options.cpp" />
+    <ClCompile Include="Helper\TimeManager.cpp" />
+    <ClCompile Include="Enemies\SniperGuard.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E66D9B25-D174-410D-99EB-F8EC14E46C5A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Atores2</RootNamespace>
+    <ProjectName>Contra</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Chien2D.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Chien2D.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

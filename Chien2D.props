@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>C:\Users\Chien\c2d2\include;C:\Users\Chien\lua\include;C:\Users\Chien\SDL\include;C:\Users\Chien\SDL_image\include;C:\Users\Chien\SDL_mixer\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Chien\c2d2\lib;C:\Users\Chien\SDL\lib;C:\Users\Chien\SDL_image\lib;C:\Users\Chien\SDL_mixer\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>c2d2.lib;ca2.lib;glu32.lib;opengl32.lib;SDL.lib;SDLMain.lib;SDL_Image.lib;SDL_Mixer.lib;cm2d.lib;cator.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
